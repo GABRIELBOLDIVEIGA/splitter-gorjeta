@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-gorjeta.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculadora de Gorjeta app</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="" />
+    </header>
+
+    <main>
+      <div class="container">
+        <p class="rotolo">Valor da Conta</p>
+        <input type="number" class="inputText" id="valorDaConta" />
+
+        <section class="sec-botoes">
+          <ul class="ul-gorjeta">
+            <p class="rotolo tituloBotoes">Selecione Gorjeta %</p>
+            <li>
+              <input type="radio" id="a5" name="quantidade" />
+              <label for="a5">5%</label>
+            </li>
+            <li>
+              <input type="radio" id="a10" name="quantidade" />
+              <label for="a10">10%</label>
+            </li>
+            <li>
+              <input type="radio" id="a15" name="quantidade" />
+              <label for="a15">15%</label>
+            </li>
+            <li>
+              <input type="radio" id="a20" name="quantidade" />
+              <label for="a25">20%</label>
+            </li>
+            <li>
+              <input type="radio" id="a25" name="quantidade" />
+              <label for="a50">25%</label>
+            </li>
+            <li>
+              <input type="radio" id="a30" name="quantidade" />
+              <label for="a50">30%</label>
+            </li>
+          </ul>
+        </section>
+
+        <p class="rotolo" for="numeroPessoas">Numero de pessoas</p>
+        <input type="number" class="inputText" id="numeroPessoas" />
+
+        <section class="sec-final">
+          <div class="div-final">
+            <div>
+              <p class="inf-pricipal">Valor da Gorjeta</p>
+              <p class="inf-secundario">/ pessoa</p>
+            </div>
+            <p class="valor">$0.00</p>
+          </div>
+
+          <div class="div-final">
+            <div>
+              <p class="inf-pricipal">Total</p>
+              <p class="inf-secundario">/ pessoa</p>
+            </div>
+            <p class="valor">$00.00</p>
+          </div>
+
+          <button class="bnt-reset">Resetar</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

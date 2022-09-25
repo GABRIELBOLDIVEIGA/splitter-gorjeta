@@ -1,0 +1,51 @@
+.ul-gorjeta {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.ul-gorjeta li {
+  float: left;
+  width: 44%;
+  height: 50px;
+  position: relative;
+
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.ul-gorjeta label,
+.ul-gorjeta input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ul-gorjeta input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.ul-gorjeta input[type="radio"]:checked + label,
+.Checked + label {
+  background: var(--strong-cyan);
+  border-radius: 5px;
+}
+
+.ul-gorjeta label {
+  cursor: pointer;
+  z-index: 90;
+
+  padding-top: 0.7rem;
+}
+
+.ul-gorjeta label:hover {
+  background: var(--grayish-cyan);
+}

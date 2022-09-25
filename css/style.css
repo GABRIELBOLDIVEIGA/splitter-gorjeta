@@ -1,0 +1,138 @@
+:root {
+  --strong-cyan: rgb(49, 180, 163);
+  --very-dark-cyan: rgb(0, 73, 77);
+  --dark-grayish-cyan: rgb(94, 122, 125);
+  --grayish-cyan: rgb(127, 156, 159);
+  --light-grayish-cyan: rgb(197, 228, 231);
+  --very-light-grayish-cyan: rgb(244, 250, 250);
+  --white: rgb(255, 255, 255);
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 20px;
+  max-width: 375px;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+header {
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-self: center;
+}
+
+.logo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--white);
+
+  border-radius: 20px;
+
+  height: 85vh;
+}
+
+.sec-botoes {
+  width: 100%;
+}
+
+.rotolo {
+  color: var(--grayish-cyan);
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 1.5em;
+}
+
+.inputText {
+  background-color: var(--very-light-grayish-cyan);
+
+  border: none;
+  border-radius: 5px;
+
+  height: 2.5em;
+  max-width: 100%;
+  margin: 0 0.5em 0 0.5em;
+
+  text-align: right;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+}
+
+#valorDaConta {
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#numeroPessoas {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.sec-nPessoas {
+  border: solid 1px red;
+}
+
+.sec-final {
+  background-color: var(--very-dark-cyan);
+  border-radius: 15px;
+
+  padding: 2em 1em 1em 1em;
+  margin: 1em 0.5em 1em 0.5em;
+}
+
+.div-final {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1em;
+}
+
+.inf-pricipal {
+  color: var(--white);
+
+  font-size: 16px;
+
+  margin-bottom: 0.3rem;
+}
+
+.inf-secundario {
+  color: var(--grayish-cyan);
+
+  font-size: 12px;
+}
+
+.valor {
+  color: var(--strong-cyan);
+}
+
+.bnt-reset {
+  background-color: var(--strong-cyan);
+  border: none;
+  border-radius: 5px;
+
+  color: var(--very-dark-cyan);
+
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0.5rem;
+  width: 100%;
+}
