@@ -25,40 +25,43 @@
     <main>
       <div class="container">
         <p class="rotolo">Valor da Conta</p>
-        <input type="number" class="inputText" id="valorDaConta" />
+        <input type="number" min="1" class="inputText" id="valorDaConta" />
 
-        <section class="sec-botoes">
+        <!-- <section class="sec-botoes">
           <ul class="ul-gorjeta">
             <p class="rotolo tituloBotoes">Selecione Gorjeta %</p>
             <li>
-              <input type="radio" id="a5" name="quantidade" />
+              <input type="radio" id="a5" name="tip" value="5"/>
               <label for="a5">5%</label>
             </li>
             <li>
-              <input type="radio" id="a10" name="quantidade" />
+              <input type="radio" id="a10" name="tip" value="10"/>
               <label for="a10">10%</label>
             </li>
             <li>
-              <input type="radio" id="a15" name="quantidade" />
+              <input type="radio" id="a15" name="tip" value="15"/>
               <label for="a15">15%</label>
             </li>
             <li>
-              <input type="radio" id="a20" name="quantidade" />
+              <input type="radio" id="a20" name="tip" value="20"/>
               <label for="a25">20%</label>
             </li>
             <li>
-              <input type="radio" id="a25" name="quantidade" />
+              <input type="radio" id="a25" name="tip" value="25"/>
               <label for="a50">25%</label>
             </li>
             <li>
-              <input type="radio" id="a30" name="quantidade" />
+              <input type="radio" id="a30" name="tip" value="30"/>
               <label for="a50">30%</label>
             </li>
           </ul>
-        </section>
-
+        </section> -->
+<!-- ********************************************** -->
+        <div id="group"></div>
+        <p id="output"></p>
+<!-- ********************************************** -->
         <p class="rotolo" for="numeroPessoas">Numero de pessoas</p>
-        <input type="number" class="inputText" id="numeroPessoas" />
+        <input type="number" min="1" class="inputText" id="numeroPessoas" />
 
         <section class="sec-final">
           <div class="div-final">
@@ -66,7 +69,7 @@
               <p class="inf-pricipal">Valor da Gorjeta</p>
               <p class="inf-secundario">/ pessoa</p>
             </div>
-            <p class="valor">$0.00</p>
+            <p class="valor" id="valorTipPorPessoa">$ 0.00</p>
           </div>
 
           <div class="div-final">
@@ -74,12 +77,21 @@
               <p class="inf-pricipal">Total</p>
               <p class="inf-secundario">/ pessoa</p>
             </div>
-            <p class="valor">$00.00</p>
+            <p class="valor" id="valorTotalPorPessoa">$ 00.00</p>
           </div>
 
           <button class="bnt-reset">Resetar</button>
         </section>
       </div>
     </main>
+
+    <script src="js/View.js"></script>
+    <script>
+      let view = new View();
+    </script>
+    <script src="js/Controller.js"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
