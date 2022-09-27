@@ -87,3 +87,13 @@ function calculaTipPotPessoa(valorConta, valorTip, totalPessoas) {
     return ('$ ' + tipPorPessoa.toFixed(2));
   }
 }
+
+let bnt = $('#bntReset');
+bnt.addEventListener('click', function (e) { 
+  console.log('deu bom');
+  $('input[name="tip"]:checked').checked = false;
+  valorTipPorPessoa.textContent = '$ 0.00';
+  valorTotalPorPessoa.textContent = '$ 00.00'
+  valorDaConta.value = '';
+  numeroDePessoas.value = '';
+});
