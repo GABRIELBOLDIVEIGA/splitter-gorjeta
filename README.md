@@ -1,1 +1,1 @@
-## Primeiro commit
+## APP para calcular e dividir gorjeta
